@@ -7,7 +7,7 @@
  * Return: new node, or NULL on failure
  */size_t binary_tree_height(const binary_tree_t *tree)
 {
-	int height_L, height_R;
+	size_t height_L, height_R;
 
 	if (tree == NULL)
 		return (0);
