@@ -9,12 +9,12 @@
 {
 	int height_L, height_R;
 
+	if (tree == NULL)
+		return (0);
+
 	height_L = binary_tree_height(tree->left);
 	height_R = binary_tree_height(tree->right);
 	if (height_L >= height_R)
 		return (height_L + 1);
 	return (height_R + 1);
-
-	if (tree == NULL)
-		return (0);
 }
