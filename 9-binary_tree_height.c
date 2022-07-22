@@ -9,7 +9,7 @@
 {
 	size_t height_L, height_R;
 
-	if (tree == NULL)
+	if (tree == NULL || binary_tree_is_leaf(tree))
 		return (0);
 
 	height_L = binary_tree_height(tree->left);
